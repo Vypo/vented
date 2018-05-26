@@ -1,0 +1,11 @@
+[package]
+name = "vented"
+version = "0.1.0"
+authors = ["Vypo Mouse <vypo@fursuits.by>"]
+
+[dependencies]
+cfg-if = "0.1"
+
+[target.'cfg(unix)'.dependencies]
+nix = "0.10.0"
+xdg = "2.1.0"
