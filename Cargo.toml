@@ -9,3 +9,7 @@ cfg-if = "0.1"
 [target.'cfg(unix)'.dependencies]
 nix = "0.10.0"
 xdg = "2.1.0"
+
+[target.'cfg(windows)'.dependencies.winapi]
+version = "0.3.4"
+features = ['std', 'fileapi', 'winbase', 'winnt', 'namedpipeapi', 'handleapi']

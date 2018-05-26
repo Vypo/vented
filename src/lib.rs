@@ -5,6 +5,8 @@ cfg_if! {
     if #[cfg(unix)] {
         extern crate nix;
         extern crate xdg;
+    } else if #[cfg(windows)] {
+        extern crate winapi;
     }
 }
 
